@@ -1,0 +1,552 @@
+:root {
+    scroll-behavior: smooth
+}
+
+* {
+    box-sizing: border-box;
+    
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    /* transition: all .2s linear; */
+}
+a{
+    text-decoration: none;
+}
+
+ul {
+    padding: 0;
+}
+
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+header nav {
+    background-color: #1E202B;
+    padding: 40px 0
+}
+
+header nav .navContent {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+header nav .navContent .logoItems {
+    display: flex;
+    align-items: center;
+}
+
+header nav .navContent .logoItems img {
+    width: 64px;
+    margin-right: 10px;
+}
+
+header nav .navContent .logoItems h1 {
+    font-size: 1.1428571429em;
+    font-weight: 500;
+    
+}
+header nav .navContent .logoItems h1 a{
+    color:#fff
+}
+header nav .navContent .logoItems small a{
+    color: #bfc1c8;
+    font-size: 0.9142857143em;
+}
+
+header nav .navContent .navItems {
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav .navContent .navItems li {
+    padding: 0 30px;
+    margin-left: 10px;
+    border:0;
+    outline:none;
+    
+    border-radius: 0px;
+}
+header nav .navContent .navItems li.activeBorder{
+    transition: .3s;
+    cursor: pointer;
+    border: 2px solid #009AD8;
+    border-radius: 20px;
+    text-align: center;
+    color: #009AD8;
+}
+header nav .navContent ul li:hover {
+    transition: .3s;
+    cursor: pointer;
+    border: 2px solid #009AD8;
+    border-radius: 20px;
+    text-align: center;
+    color: #009AD8;
+
+}
+
+header nav .navContent i {
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s;
+    padding: 10px;
+    display: none
+}
+
+header nav .navContent i:hover {
+    color: #009AD8;
+    border-radius: 10px;
+    border: #009AD8 solid 2px
+}
+
+/* =======================================--------body---------===================================== */
+/* =======================================--------body---------===================================== */
+/* =======================================--------body---------===================================== */
+
+.body .bodyIamge{
+background-image: url("../images/bodyImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 50vh;
+    position: relative;
+}
+.body .layer {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.411);
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.body .layer .findLocation {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    transform: translateY(70px);
+}
+
+.body .layer .findLocation input {
+    background-color: #1E202B;
+    border: none;
+    outline: none;
+    padding: 17px;
+    border-radius: 40px;
+    color: #fff;
+    width: 100%;
+}
+
+.body .layer .findLocation button {
+    background-color: #009AD8;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    color: #fff;
+}
+
+/* =======================================--------weather Statistics ---------===================================== */
+/* =======================================--------weather Statistics---------===================================== */
+/* =======================================--------weather Statistics---------===================================== */
+/* .body .allWeather {
+    width: 100%;
+    background: #1E202B;
+
+} */
+
+.body .allWeather .weatherStatistics {
+    display: flex;
+    /* position: relative;
+    bottom: 150px */
+    transform: translateY(180px);
+}
+
+.body .allWeather .weatherStatistics .left {
+    width: calc(100%/3);
+    background: #323544;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.body .allWeather .weatherStatistics .left .headerData {
+    color: #BFC1C8;
+    font-size: 1.15rem;
+    background: #2D303D;
+    border-top-left-radius: 10px;
+}
+
+.body .allWeather .weatherStatistics .left .headerData p {
+    margin: 0;
+}
+
+.body .allWeather .weatherStatistics .left .contentData {
+    padding: 40px 20px;
+}
+
+.body .allWeather .weatherStatistics .left .contentData h3 {
+    color: #BFC1C8;
+    font-size: 1.28rem;
+}
+
+.body .allWeather .weatherStatistics .left .contentData h1 {
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.body .allWeather .weatherStatistics .left .contentData i {
+    color: rgb(0, 132, 255);
+    font-size: 2.28rem;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+.body .allWeather .weatherStatistics .left .contentData p {
+    color: #009AD8;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.body .allWeather .weatherStatistics .left .contentData .details {
+    margin-top: 20px;
+    display:flex;
+    align-items: center
+}
+
+.body .allWeather .weatherStatistics .left .contentData .details span {
+    color: #BFC1C8;
+    font-weight: bold;
+}
+
+.body .allWeather .weatherStatistics .left .contentData .details span i{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.body .allWeather .weatherStatistics .middle {
+    width: calc(100%/3);
+    background: #262936;
+}
+
+.body .allWeather .weatherStatistics .middle .headerData {
+    color: #BFC1C8;
+    font-size: 1.15rem;
+    background: #222530;
+}
+
+.body .allWeather .weatherStatistics .middle .headerData p {
+    margin: 0;
+}
+
+.body .allWeather .weatherStatistics .middle .contentData {
+    padding: 40px 20px;
+}
+
+.body .allWeather .weatherStatistics .middle .contentData i {
+    color: gainsboro;
+    font-size: 3.2rem;
+}
+
+.body .allWeather .weatherStatistics .middle .contentData h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+.body .allWeather .weatherStatistics .middle .contentData h4 {
+    color: #BFC1C8;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* margin-top: 10px; */
+}
+
+.body .allWeather .weatherStatistics .middle .contentData p {
+    color: #009AD8;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+
+
+
+
+.body .allWeather .weatherStatistics .right {
+    width: calc(100%/3);
+    background: #323544;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.body .allWeather .weatherStatistics .right .headerData {
+    color: #BFC1C8;
+    font-size: 1.15rem;
+    background: #2D303D;
+    border-top-right-radius: 10px;
+
+}
+
+.body .allWeather .weatherStatistics .right .headerData p {
+    margin: 0;
+}
+
+.body .allWeather .weatherStatistics .right .contentData {
+    padding: 40px 20px;
+}
+
+.body .allWeather .weatherStatistics .right .contentData i {
+    color: gainsboro;
+    font-size: 3.2rem;
+}
+
+.body .allWeather .weatherStatistics .right .contentData h3 {
+    color: #fff;
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-top: 10px;
+}
+
+.body .allWeather .weatherStatistics .right .contentData h4 {
+    color: #BFC1C8;
+    font-weight: bold;
+    font-size: 1.2rem;
+    /* margin-top: 10px; */
+}
+
+.body .allWeather .weatherStatistics .right .contentData p {
+    color: #009AD8;
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+
+
+
+.square{
+    width: 100%;
+    height: 350px;
+    background: #1E202B;
+}
+/* =======================================--------footer ---------===================================== */
+/* =======================================--------footer---------===================================== */
+/* =======================================--------footer---------===================================== */
+footer{
+    background-color:#262936;
+    padding:50px;
+}
+footer .upperPart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .upperPart .findLocation{
+    position: relative;
+    width: 60%;
+    /* margin: auto; */
+    /* transform: translateY(70px); */
+}
+footer .upperPart .findLocation input{
+    background-color: #1E202B;
+    border: none;
+    outline: none;
+    padding: 17px;
+    border-radius: 40px;
+    color: #fff;
+    width: 100%;
+}
+footer .upperPart .findLocation button{
+    background-color: #009AD8;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 20px;
+    position: absolute;
+    top: 7px;
+    right: 8px;
+    color: #fff;
+}
+footer .upperPart .footerIcons{
+    margin-right: 150px;
+}
+footer .upperPart .footerIcons i{
+    color: #009AD8;
+    width:30px;
+    height: 30px;
+    border-radius: 50%;
+    background:#1E202B;
+    padding: 8px 12px;
+    font-size: 1.5rem;
+    margin-left: 5px;
+    cursor: pointer;
+}
+footer .upperPart .footerIcons i:hover{
+    color:#fff;
+    background:#009AD8;
+}
+footer .lowerPart p{
+    color: #BFC1C8;
+
+}
+
+
+@media (max-width:1390px) {
+    .body .allWeather .weatherStatistics .left .contentData h1 {
+        font-size: 4.28rem;
+    }
+}
+
+@media (max-width:1200px) {
+
+    header nav .navContent {
+        padding: 0 0px;
+    }
+    footer .upperPart .footerIcons{
+        margin-right: 0;
+    }
+}
+
+@media (max-width:991px) {
+    header nav .navContent .navItems {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        display: block;
+        text-align: center;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        margin-bottom: 0px;
+        background-color: #262936;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        z-index: 7;
+    }
+
+    header nav .navContent .navItems.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header nav .navContent .navItems li:hover {
+        border: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 10px;
+    }
+
+    header nav .navContent .navItems li {
+        color: #fff;
+        padding: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+        border-radius: 10px;
+    }
+  
+
+    header nav .navContent .navItems li:nth-child(1) {
+        border-top: none;
+    }
+    header nav .navContent .navItems li.activeBorder{
+        border: none;
+        border-radius: 20px;
+    }
+    header nav .navContent i {
+        display: block;
+    }
+
+    header nav .navContent {
+        padding: 0 00px;
+    }
+
+    .body .allWeather .weatherStatistics .left {
+        width: 100%;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0;
+    }
+
+    .body .allWeather .weatherStatistics .middle {
+        width: 100%;
+    }
+
+    .body .allWeather .weatherStatistics .right {
+        width: 100%;
+    }
+
+    .body .allWeather .weatherStatistics {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .body .allWeather .weatherStatistics .left .headerData {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+
+    }
+
+    .body .allWeather .weatherStatistics .right {
+        border-bottom-left-radius: 10px;
+        border-top-right-radius: 0;
+    }
+
+    .body .allWeather .weatherStatistics .left .contentData h1 {
+        display: inline;
+    }
+
+    .body .allWeather .weatherStatistics .left .contentData {
+        padding: 25px 20px;
+    }
+
+    .body .allWeather .weatherStatistics .middle .contentData {
+        padding: 25px 20px;
+    }
+
+    .body .allWeather .weatherStatistics .right .contentData {
+        padding: 25px 20px;
+    }
+    footer .upperPart{
+        flex-direction:column;
+        align-items: start;
+    }
+    footer .upperPart .findLocation{
+        width: 100%;
+    }
+    footer .upperPart .footerIcons{
+        margin-right: 0px;
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width:776px) {
+    header nav .navContent {
+        padding: 0 00px;
+    }
+    .square{
+        height: 800px;
+    }
+}
+
+@media (max-width:576px) {
+    header nav .navContent {
+        padding: 0 00px;
+    }
+    .square{
+        height: 850px;
+    }
+
+    /* .body .layer .findLocation button{
+        left:315px;
+    } */
+}
